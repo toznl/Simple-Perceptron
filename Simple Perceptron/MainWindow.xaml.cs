@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using OxyPlot;
+
 namespace Simple_Perceptron
 {
     /// <summary>
@@ -24,5 +26,6 @@ namespace Simple_Perceptron
         {
             InitializeComponent();
         }
+        
     }
 }

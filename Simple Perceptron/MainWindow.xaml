@@ -3,10 +3,28 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:oxy="http://oxyplot.org/wpf"
         xmlns:local="clr-namespace:Simple_Perceptron"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Single Perceptron" Height="559.394" Width="566.594">
+
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+    
+    <Grid Margin="0,0,0,356.333">
+        <oxy:Plot Title="Batch" Margin="0,0,0,-23">
+            <oxy:Plot.Series>
+                <oxy:LineSeries ItemsSource="{Binding Points}"/>
+            </oxy:Plot.Series>
+        </oxy:Plot>
+        <oxy:Plot Title="On-Line" Margin="0,177,0,-201">
+            <oxy:LineSeries ItemsSource="{Binding Points}"/>
+        </oxy:Plot>
+        <oxy:Plot Title="Stochastic batch" Margin="0,322,0,-347">
+            <oxy:LineSeries ItemsSource="{Binding Points}"/>
+        </oxy:Plot>
+
     </Grid>
+    
 </Window>
