@@ -8,9 +8,7 @@
         mc:Ignorable="d"
         Title="Single Perceptron" Height="559.394" Width="566.594">
 
-    <Window.DataContext>
-        <local:MainViewModel/>
-    </Window.DataContext>
+   
     
     <Grid Margin="0,0,0,356.333">
         <oxy:Plot Title="Batch" Margin="0,0,0,-23">
