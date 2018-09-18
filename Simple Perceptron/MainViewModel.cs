@@ -9,13 +9,4 @@ namespace Simple_Perceptron
     using System.Collections.Generic;
 
     using OxyPlot;
-
-
-
-
-   
-
-
-
-
 }

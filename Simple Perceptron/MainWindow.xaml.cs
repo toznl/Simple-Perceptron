@@ -111,6 +111,18 @@ namespace Simple_Perceptron
 
         }
 
+        public class MlpFunctions
+        {
+            public double Func_Net(int input_number)
+            {
+                double result;
+
+                result
+
+                return result;
+            }
+        }
+
         public class SinglePerceptron
         {
             double bias = 0;
@@ -258,9 +270,6 @@ namespace Simple_Perceptron
                 {
                     while (lostFunc1 > 0.01)
                     {
-                        
-
-                        
                         bias = bias + (eta * (
                             (-(1 / Math.Exp((bias + weight1 * dataset_and.d1.x1 + weight2 * dataset_and.d1.x2))
                             * Math.Sin(dataset_and.d1.output + 1 / Math.Exp((bias + weight1 * dataset_and.d1.x1 + weight2 * dataset_and.d1.x2)) - 1)) / 2)));
@@ -281,16 +290,6 @@ namespace Simple_Perceptron
                         }
 
                         temp = lostFunc1;
-                        
-
-                        //System.Console.WriteLine(bias);
-                        //System.Console.WriteLine(weight1);
-                        //System.Console.WriteLine(weight2);
-                        //System.Console.WriteLine(epoch);
-                        //System.Console.WriteLine(lostFunc1);
-                        //System.Console.WriteLine(temp);
-                        
-
                     }
                     Console.WriteLine("1 COMPLETE");
                     while (lostFunc2 > 0.01)
